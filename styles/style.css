@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+body{
+   background-color: #ECF2F7;
+}
+.container {
+   display: grid; 
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr ;
+   height: 100vh;
+   gap: 15px;
+   padding: 50px;
+   color: hsl(0, 0%, 100%);
+}
+.container p{
+   font-size: 13px;
+   margin-top: 10px;
+}
+.container h2{
+   font-size: 18px;
+   margin-top: 10px;
+}
+.item{
+   padding: 20px 30px;
+   border-radius: 10px;
+   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+   line-height: 1.5;
+}
+#item-1 {
+   background-color: hsl(263, 55%, 52%); 
+   grid-row-start: 1;
+   grid-column-start: 1;
+   grid-row-end: 2;
+   grid-column-end: 3;
+}
+#item-2 {
+   background-color: hsl(217, 19%, 35%); 
+   grid-row-start: 1;
+   grid-column-start: 3;
+   grid-row-end: 2;
+   grid-column-end: 4;
+}
+#item-3 {
+   color: hsl(219, 29%, 14%);
+   background-color: hsl(0, 0%, 100%); 
+   grid-row-start: 2;
+   grid-column-start: 1;
+   grid-row-end: 3;
+   grid-column-end: 2;
+   
+}
+#item-4 {
+   background-color: hsl(219, 29%, 14%); 
+   grid-row-start: 2;
+   grid-column-start: 2;
+   grid-row-end: 3;
+   grid-column-end: 4;
+}
+#item-5 {
+   color: hsl(219, 29%, 14%);
+   background-color: hsl(0, 0%, 100%); 
+   grid-row-start: 1;
+   grid-column-start: 4;
+   grid-row-end: 3;
+   grid-column-end: 5;
+}
+.info{
+   display: flex;
+   gap: 20px;
+}
+.info p{
+   font-weight: 800;
+
+}
+.info p span{
+   font-weight: 300;
+}
+.profile{
+   border: 2px solid hsl(210, 46%, 95%);
+   border-radius: 50px;
+}
+.attribution{
+   grid-column-start: 1;
+   grid-column-end: 5;
+}
+.icon {
+   position: absolute;
+   width: 90px; 
+   top: 50px;
+   left: 440px;
+}
